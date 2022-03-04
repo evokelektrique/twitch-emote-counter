@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
             Emote::query()->update(["usage" => 0]);
             Log::info('Reset emotes usage');
         })
-        ->everyMinute()
+        ->daily()
         ->timezone($timezone);
     }
 
