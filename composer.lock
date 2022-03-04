@@ -467,16 +467,16 @@
         },
         {
             "name": "evokelektrique/poggers",
-            "version": "v0.3.2",
+            "version": "v0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/evokelektrique/POGGERS.git",
-                "reference": "bc5168594f79c2cba4b5e6ac15cffe442d9db251"
+                "reference": "d7409077ca6de7c31e89ac536d09925ea2ef7321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evokelektrique/POGGERS/zipball/bc5168594f79c2cba4b5e6ac15cffe442d9db251",
-                "reference": "bc5168594f79c2cba4b5e6ac15cffe442d9db251",
+                "url": "https://api.github.com/repos/evokelektrique/POGGERS/zipball/d7409077ca6de7c31e89ac536d09925ea2ef7321",
+                "reference": "d7409077ca6de7c31e89ac536d09925ea2ef7321",
                 "shasum": ""
             },
             "require": {
@@ -502,9 +502,9 @@
             "description": "Simply get stats of your chat",
             "support": {
                 "issues": "https://github.com/evokelektrique/POGGERS/issues",
-                "source": "https://github.com/evokelektrique/POGGERS/tree/v0.3.2"
+                "source": "https://github.com/evokelektrique/POGGERS/tree/v0.3.3"
             },
-            "time": "2022-02-26T09:08:57+00:00"
+            "time": "2022-03-03T14:55:37+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
