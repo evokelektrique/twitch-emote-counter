@@ -4,6 +4,8 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\Log;
+use App\Models\Emote;
 
 class Kernel extends ConsoleKernel
 {
@@ -15,7 +17,17 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        $timezone = env("TIMEZONE");
+
+        /////////////////
+        // Reset usage //
+        /////////////////
+        $schedule->call(function() {
+            Emote::query()->update(["usage" => 0]);
+            Log::info('Reset emotes usage');
+        })
+        ->everyMinute()
+        ->timezone($timezone);
     }
 
     /**
