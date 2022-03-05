@@ -69,12 +69,12 @@ class TwitchListen extends Command
                     }
                 }
 
+
               } catch (\WebSocket\ConnectionException $e) {
-                echo "Error: ".$e->getMessage();
-                // LOG::error("Error: ".$e->getMessage());
+                echo "Error: ".$e->getMessage() . "\n";
+                $client->ping("PING");
             }
         }
-        $client->close();
 
         return 0;
     }
