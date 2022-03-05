@@ -40,6 +40,10 @@ class EmoteSeeder extends Seeder
         $bttv_emotes = $bttv->list($user_id);
         $emotes = array_merge($emotes, $this->modify($bttv_emotes, "bttv"));
 
+        // List BTTV global emotes
+        $bttv_global_emotes = $bttv->list();
+        $emotes = array_merge($emotes, $this->modify($bttv_global_emotes, "bttv_global"));
+
         // List FFZ emotes of a channel
         $ffz = new \POGGERS\EmoteProviders\FFZ;
         $ffz_emotes = $ffz->list($user_id);
