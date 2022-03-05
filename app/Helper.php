@@ -29,7 +29,7 @@ class Helper {
         $emotes = [];
 
         foreach($words as $word => $count) {
-            $exists = Emote::where([["name", "=", $word]])->exists();
+            $exists = Emote::where('name', $word)->exists();
             if($exists) {
                 $emotes[$word] = $count;
             }
