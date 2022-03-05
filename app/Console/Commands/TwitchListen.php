@@ -45,7 +45,7 @@ class TwitchListen extends Command
 
         $address = "wss://irc-ws.chat.twitch.tv:443";
 
-        $client = new \WebSocket\Client($address);
+        $client = new \WebSocket\Client($address, ['timeout' => 60]);
         $client->text("PASS oauth:$pass");
         $client->text("NICK $user");
         $client->text("JOIN #$channel");
@@ -57,16 +57,21 @@ class TwitchListen extends Command
                 $message = $client->receive();
                 $message = $this->modify_socket_message($channel, $message);
                 if($message) {
-                    $parsed = Helper::parse($message);
+                    $parsed = Helper::parse(trim($message));
                     $emotes = Helper::count_emotes($parsed);
 
                     if($emotes) {
+                        if(\App::environment() === "local") {
+                            print_r($emotes);
+                        }
+
                         Helper::update_emotes($emotes);
                     }
                 }
 
               } catch (\WebSocket\ConnectionException $e) {
-                LOG::error("Error: ".$e->getMessage());
+                echo "Error: ".$e->getMessage();
+                // LOG::error("Error: ".$e->getMessage());
             }
         }
         $client->close();
