@@ -1,1 +1,49 @@
-This is a "{{name}}" and {{date}}.
+<div align="center">
+    <p><b>Twitch Emote Counter</b></p>
+    <small>Simply get stats of your chat</small>
+</div>
+
+<br>
+<br>
+
+<div align="center">
+    <table>
+    {{#emotes}}
+        <tr>
+            {{#.}}
+            <td>
+                <img src="{{url}}" height="30" />
+                <b>{{name}}</b>
+                ({{usage}})
+            </td>
+            {{/.}}
+        </tr>
+    {{/emotes}}
+    </table>
+</div>
+
+<p align="center">
+    <i>Most used emotes of the day in <a href="twitch.tv/forsen">Forsen</a>'s chat, Last updated at {{time}}</i>
+</p>
+
+## Installation
+
+An easy step-by-step tutorial for installing the app is described below:
+
+1. clone the repo into your desired destination `git clone https://github.com/evokelektrique/twitch-emote-counter/` and navigate into the folder
+2. Install the required PHP packages with `composer install`
+3. Fill out the environment variables in `.env`, make sure the `CLIENT_ID`, `OAUTH_TOKEN`, `CHANNEL_NAME`, `TIMEZONE`, `NICKNAME` options are filled properly
+4. Migrate the database by running the `php artisan migrate` command
+5. Run the twitch chat listener `php artisan twitch:listen`
+
+<b>Additional steps for production deployment: (skip this on your local machine)</b>
+
+6. Setup task scheduler cron job `* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1`
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request

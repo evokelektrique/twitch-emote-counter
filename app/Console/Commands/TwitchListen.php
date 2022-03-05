@@ -44,36 +44,45 @@ class TwitchListen extends Command
         $channel = env("CHANNEL_NAME");
 
         $address = "wss://irc-ws.chat.twitch.tv:443";
+        while(true) {
+            echo "Reconnected\n";
+            $client = new \WebSocket\Client($address, ['timeout' => 3600]);
+            $client->text("PASS oauth:$pass");
+            $client->text("NICK $user");
+            $client->text("JOIN #$channel");
 
-        $client = new \WebSocket\Client($address, ['timeout' => 60]);
-        $client->text("PASS oauth:$pass");
-        $client->text("NICK $user");
-        $client->text("JOIN #$channel");
+            LOG::info("Connected to $address");
 
-        LOG::info("Connected to $address");
+            while (true) {
+                try {
+                    $message = $client->receive();
+                    $message = $this->modify_socket_message($channel, $message);
+                    if($message) {
+                        $parsed = Helper::parse(trim($message));
+                        $emotes = Helper::count_emotes($parsed);
 
-        while (true) {
-            try {
-                $message = $client->receive();
-                $message = $this->modify_socket_message($channel, $message);
-                if($message) {
-                    $parsed = Helper::parse(trim($message));
-                    $emotes = Helper::count_emotes($parsed);
+                        if($emotes) {
+                            if(\App::environment() === "local") {
+                                print_r($emotes);
+                            }
 
-                    if($emotes) {
-                        if(\App::environment() === "local") {
-                            print_r($emotes);
+                            Helper::update_emotes($emotes);
                         }
+                    }
+                    $client->ping("PING");
 
-                        Helper::update_emotes($emotes);
+                  } catch (\WebSocket\ConnectionException $e) {
+                    if($e->getCode() === 0) {
+                        $client->close();
+                        echo "Closing connection\n";
+                        break;
+                    } else {
+                        echo "Error: ".$e->getMessage() . "\n";
                     }
                 }
-
-
-              } catch (\WebSocket\ConnectionException $e) {
-                echo "Error: ".$e->getMessage() . "\n";
-                $client->ping("PING");
             }
+
+            sleep(1);
         }
 
         return 0;
