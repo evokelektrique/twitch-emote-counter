@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div align="center">
     <p><b>Twitch Emote Counter</b></p>
     <small>Simply get stats of your chat</small>
@@ -101,7 +100,7 @@
 </div>
 
 <p align="center">
-    <i>Most used emotes of the day in <a href="twitch.tv/forsen">Forsen</a>'s chat, Last updated at Saturday, 5 March, 14:40 CET</i>
+    <i>Most used emotes of the day in <a href="twitch.tv/forsen">Forsen</a>'s chat, Last updated at Saturday, 5 March, 14:43 CET</i>
 </p>
 
 ## Installation
@@ -125,6 +124,3 @@ An easy step-by-step tutorial for installing the app is described below:
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
-=======
-This is a "Test" and Saturday, 5 March, 06:39 GMT-5.
->>>>>>> 0bec3c708273d5add89d52606a01f965c5ea3074
