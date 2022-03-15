@@ -12,95 +12,95 @@
             <td>
                 <img src="https:&#x2F;&#x2F;static-cdn.jtvnw.net&#x2F;emoticons&#x2F;v2&#x2F;521050&#x2F;static&#x2F;light&#x2F;3.0" height="30" />
                 <b>forsenE</b>
-                (27704)
+                (28013)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;60651e09a407570b72f28e03&#x2F;3x" height="30" />
                 <b>forsenInsane</b>
-                (7540)
+                (7648)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;609f34e167644f1d67e86619&#x2F;3x" height="30" />
                 <b>forsenJAM</b>
-                (7146)
+                (7563)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;60477a2f306b602acc599abf&#x2F;3x" height="30" />
                 <b>LULE</b>
-                (6031)
+                (6118)
             </td>
         </tr>
         <tr>
             <td>
                 <img src="https:&#x2F;&#x2F;static-cdn.jtvnw.net&#x2F;emoticons&#x2F;v2&#x2F;84608&#x2F;static&#x2F;light&#x2F;3.0" height="30" />
                 <b>cmonBruh</b>
-                (4397)
+                (4437)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;static-cdn.jtvnw.net&#x2F;emoticons&#x2F;v2&#x2F;304412445&#x2F;static&#x2F;light&#x2F;3.0" height="30" />
                 <b>forsenSmug</b>
-                (4375)
+                (4399)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;cdn.frankerfacez.com&#x2F;emote&#x2F;128054&#x2F;4" height="30" />
                 <b>OMEGALUL</b>
-                (4028)
+                (4074)
             </td>
             <td>
-                <img src="https:&#x2F;&#x2F;static-cdn.jtvnw.net&#x2F;emoticons&#x2F;v2&#x2F;emotesv2_2f9a36844b054423833c817b5f8d4225&#x2F;static&#x2F;light&#x2F;3.0" height="30" />
-                <b>forsenPls</b>
-                (3755)
+                <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;60f0edec8ed8b373e42231b2&#x2F;3x" height="30" />
+                <b>forsenLaughingAtYou</b>
+                (3818)
             </td>
         </tr>
         <tr>
             <td>
-                <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;60f0edec8ed8b373e42231b2&#x2F;3x" height="30" />
-                <b>forsenLaughingAtYou</b>
-                (3754)
+                <img src="https:&#x2F;&#x2F;static-cdn.jtvnw.net&#x2F;emoticons&#x2F;v2&#x2F;emotesv2_2f9a36844b054423833c817b5f8d4225&#x2F;static&#x2F;light&#x2F;3.0" height="30" />
+                <b>forsenPls</b>
+                (3805)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;cdn.frankerfacez.com&#x2F;emote&#x2F;167431&#x2F;4" height="30" />
                 <b>monkaOMEGA</b>
-                (3369)
+                (3394)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;56e9f494fff3cc5c35e5287e&#x2F;3x" height="30" />
                 <b>monkaS</b>
-                (2560)
+                (2568)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;static-cdn.jtvnw.net&#x2F;emoticons&#x2F;v2&#x2F;emotesv2_e02650251d204198923de93a0c62f5f5&#x2F;static&#x2F;light&#x2F;3.0" height="30" />
                 <b>PotFriend</b>
-                (2321)
+                (2357)
             </td>
         </tr>
         <tr>
             <td>
+                <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;61fed98406fd6a9f5be381b1&#x2F;3x" height="30" />
+                <b>ForsenLookingAtYou</b>
+                (2296)
+            </td>
+            <td>
                 <img src="https:&#x2F;&#x2F;cdn.frankerfacez.com&#x2F;emote&#x2F;243789&#x2F;4" height="30" />
                 <b>Pepega</b>
-                (2188)
+                (2253)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;static-cdn.jtvnw.net&#x2F;emoticons&#x2F;v2&#x2F;115234&#x2F;static&#x2F;light&#x2F;3.0" height="30" />
                 <b>BatChest</b>
-                (2090)
-            </td>
-            <td>
-                <img src="https:&#x2F;&#x2F;cdn.betterttv.net&#x2F;emote&#x2F;61fed98406fd6a9f5be381b1&#x2F;3x" height="30" />
-                <b>ForsenLookingAtYou</b>
-                (2071)
+                (2101)
             </td>
             <td>
                 <img src="https:&#x2F;&#x2F;cdn.frankerfacez.com&#x2F;emote&#x2F;373609&#x2F;4" height="30" />
                 <b>forsenComfy</b>
-                (1995)
+                (1996)
             </td>
         </tr>
     </table>
 </div>
 
 <p align="center">
-    <i>Most used emotes of the day in <a href="https://twitch.tv/forsen">Forsen</a>'s chat, Last updated at Tuesday, 15 March, 13:10 CET</i>
+    <i>Most used emotes of the day in <a href="https://twitch.tv/forsen">Forsen</a>'s chat, Last updated at Tuesday, 15 March, 19:08 CET</i>
 </p>
 
 ## Installation
