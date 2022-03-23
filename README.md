@@ -100,7 +100,7 @@
 </div>
 
 <p align="center">
-    <i>Most used emotes of the day in <a href="https://twitch.tv/forsen">Forsen</a>'s chat, Last updated at Wednesday, 23 March, 01:33 CET</i>
+    <i>Most used emotes of the day in <a href="https://twitch.tv/forsen">Forsen</a>'s chat, Last updated at Wednesday, 23 March, 07:09 CET</i>
 </p>
 
 ## Installation
